@@ -1,0 +1,31 @@
+{
+  "name": "api-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/app.js"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "./src/**"
+    ],
+    "modulePathIgnorePatterns": [
+      "./src/routes/",
+      "./src/app.js"
+    ],
+    "preset": "@shelf/jest-mongodb"
+  },
+  "author": "jessusvelasquez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.2.2",
+    "mockingoose": "^2.15.2"
+  }
+}
