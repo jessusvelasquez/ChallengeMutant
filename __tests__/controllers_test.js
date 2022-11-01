@@ -10,6 +10,13 @@ const mockRequest = () => {
         },
     };
 };
+const mockRequestNoMatch = () => {
+    return {
+        body: {
+            dna: ["ATGCGF", "CAGTGC", "TTATGT", "AGAAGG", "CCCCTA", "TCACTG"]
+        },
+    };
+};
 const mockRequestNoArray = () => {
     return {
         body: {
@@ -80,6 +87,17 @@ describe("Test app-controllers", () => {
         expect(resp.status).toHaveBeenCalledWith(500);
         expect(resp.json).toHaveBeenCalledWith({
             isMutant: false
+        });
+
+    });
+    it("test_dnaAnalysis(500-no match DNA)", async () => {
+        const req = mockRequestNoMatch();
+        const resp = mockResponse();
+
+        await dnaAnalysis(req, resp);
+        expect(resp.status).toHaveBeenCalledWith(500);
+        expect(resp.json).toHaveBeenCalledWith({
+            errorMessage:"Secuencia de DNA incorrecta"
         });
 
     });

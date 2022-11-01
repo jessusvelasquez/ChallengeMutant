@@ -4,9 +4,22 @@ const { human_dna } = require('../functions/database')
 const dnaAnalysis = async (req, resp) => {
     const dna = req.body.dna;
     let result = false;
-    console.log("dna: ", dna);
-
+    let pattern = true;
+    
+    
     if (Array.isArray(dna)) {
+        dna.forEach((element)=>{
+            const regex = /^[ATCG\s]+$/g
+            const isCorrect = regex.test(element);
+            if (!isCorrect) {
+                resp.status(500).json({errorMessage:"Secuencia de DNA incorrecta"});
+                pattern = isCorrect
+                return;
+            };
+        });
+        if(!pattern){
+            return;
+        }
         result = isMutant(dna);
         //it is verified if there is already a DNA record
         const r = human_dna.find({ dna: dna })
@@ -19,7 +32,7 @@ const dnaAnalysis = async (req, resp) => {
 
     } else {
         resp.status(500).json({
-            message: "El body no es correcto"
+            errorMessage: "El body no es correcto"
         })
     }
 
