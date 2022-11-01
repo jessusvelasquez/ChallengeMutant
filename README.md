@@ -114,15 +114,16 @@ se encuentra con covertura al 100%
 
 ## Resultado de ejeuciones
 
-[POST] /mutant (true)
- ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/save_mutant.png)\
+#### [POST] /mutant (true)
+ ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/save_mutant.png)
 
-[POST] /mutant (false)
- ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/save_mutant_false.png)\
+#### [POST] /mutant (false)
+ ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/save_mutant_false.png)
 
-[GET] /stats
- ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/stats.png)\
 
-[npm test] 
- ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/test_result.png)\
+#### [GET] /stats
+ ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/stats.png)
+
+#### [npm test]
+ ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/test_result.png)
 
