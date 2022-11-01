@@ -115,7 +115,7 @@ se encuentra con covertura al 100%
 - [@jessusvelasquez](https://github.com/jessusvelasquez/ChallengeMutant)
 
 
-## Resultado de ejeuciones
+## Resultado de ejecuciones
 
 #### [POST] /mutant (true)
  ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/save_mutant.png)
