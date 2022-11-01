@@ -15,8 +15,7 @@
     "modulePathIgnorePatterns": [
       "./src/routes/",
       "./src/app.js"
-    ],
-    "preset": "@shelf/jest-mongodb"
+    ]
   },
   "author": "jessusvelasquez",
   "license": "ISC",

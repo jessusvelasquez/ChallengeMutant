@@ -50,7 +50,35 @@ Response:\
 }
 ## Demo
 
-En construccion...
+Este api para fines de pruebas se encuentra desplegado en AWS.
+
+### URL: http://ec2-52-15-147-160.us-east-2.compute.amazonaws.com
+
+## API Reference
+
+#### Analisis DNA y guarda el resultado
+
+```http
+  POST /mutant
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `dna` | `Array` | **Requerido**. Atributo con el objeto para analizar |
+
+Resultado:\
+ ![result-> /mutant](https://github.com/jessusvelasquez/share-images/blob/master/assets/img_mutant/save_mutant.png)
+
+#### Ver estadisticas de los analisis realizados
+
+```http
+  GET /stats
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `N/A`      | `N/A` | No se recibe ningún parametro de consulta |
+
 
 
 ## Instalacion ambiente Local
