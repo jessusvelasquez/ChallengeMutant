@@ -64,7 +64,8 @@ Este api para fines de pruebas se encuentra desplegado en AWS.
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `dna` | `Array` | **Requerido**. Atributo con el objeto para analizar |
+| `dna` | `Array` | **Requerido**. Atributo con el objeto para analizar  |
+||||{"dna": [ ATGCTT","GCGTGC","TTATGT","AGAAGG","CGCCTA","TTTGTT"]}|
 
 
 #### Ver estadisticas de los analisis realizados
